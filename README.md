@@ -5,3 +5,12 @@
 - 화, 목, 토 자정까지는 문제 번호를 알려주셔야 합니다 🙏 [양식] {문제번호}.cpp
 - 월, 수, 금 9시 전까지 정답코드 푸쉬하기
 - 난이도 제한없음 (째째하게 브론즈?)
+
+#TIP
+
+```
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define PRECISION 2
+```
