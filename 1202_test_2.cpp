@@ -8,7 +8,7 @@ using namespace std;
 
 struct compare{ //보석 무게순 정렬
     bool operator()(int v1, int v2){
-        return v1 < v2;
+        return v1 < v2; //True이면 v1의 우선순위가 더 낮음
     }
 };
 
@@ -30,7 +30,7 @@ int main() {
     sort(arrV, arrV+N); //오름차순
     sort(arrB, arrB+K);
     
-    long long sum=0;
+    long long sum=0; //틀림의 주요인
     int index = 0;
 
     for (int i = 0; i < K; i++) {
