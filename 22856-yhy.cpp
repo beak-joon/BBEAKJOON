@@ -1,4 +1,4 @@
-#include <iostream> //22856번, 아직 수정 중, 가능한 예시 다 되는 데 틀렸다고 나와요
+#include <iostream> //22856번
 #include <vector>
 
 int count=0;
@@ -30,18 +30,18 @@ int main(){
     int n1,n2,n3;
     for(int i=1; i<N+1; i++){
         std::cin>>n1>>n2>>n3;
-        tree[i].key=i;
+        tree[n1].key=n1;
         if(n2==-1){
-            tree[i].left=NULL;
+            tree[n1].left=NULL;
         }
         else if(n2!=-1){
-            tree[i].left=&tree[n2];
+            tree[n1].left=&tree[n2];
         }
         if(n3==-1){
-            tree[i].right=NULL;
+            tree[n1].right=NULL;
         }
         else if(n3!=-1){
-            tree[i].right=&tree[n3];
+            tree[n1].right=&tree[n3];
             }
     }
     
